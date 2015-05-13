@@ -1,0 +1,9 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+from contacts.models import Contact
+# Create your views here.
+
+class ContactListView(render):
+    model = Contact
+
+
